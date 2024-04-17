@@ -84,6 +84,7 @@ public class Main {
                 // poFiIS_X -> FileInputStream.
                 // poObOS_X -> ObjectOutputStream.
                 // poObIS_X -> ObjectInputStream.
+                // poTh_Xxx -> Thread.
                 //
                 // set_pgi_age - Сетор для переменной pgi_ag. // Лучше создавать средой разработки.
                 // get_pgi_age - Гетор для переменной pgi_ag. // Лучше создавать средой разработки.

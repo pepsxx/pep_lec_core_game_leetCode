@@ -1,4 +1,4 @@
-package Pp_T02.Pp_L02;
+package Pp_T02.Pp_L02_ArrayList_2;
 
 import java.util.ArrayList;
 import java.util.List;
