@@ -39,7 +39,6 @@ public class Pc_Test {
         for (int i = 0; i < 10; i++) pmLIn_List.add(i);
         System.out.println("pmLIn_List = " + pmLIn_List);
         pmLIn_List = new LinkedList<>(pmLIn_List); // Преобразование ArrayList в LinkedList, можно сделать т.к. List<Integer>, а не только ArrayList<Integer>.
-        //ArrayList удобен, когда нужен быстрый доступ по индексу, а LinkedList - когда важны операции вставки и удаления.
         System.out.println("pmLIn_List = " + pmLIn_List);
     }
 }

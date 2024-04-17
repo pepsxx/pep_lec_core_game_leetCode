@@ -1,4 +1,4 @@
-package Pp_T02.Pp_L03_Thread;
+package Pp_T02.Pp_L16_Thread;
 
 public class Pc_Test {
     //https://www.youtube.com/@alishevN

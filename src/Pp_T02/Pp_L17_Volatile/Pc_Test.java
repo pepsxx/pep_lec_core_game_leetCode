@@ -1,4 +1,4 @@
-package Pp_T02.Pp_L04_Volatile;
+package Pp_T02.Pp_L17_Volatile;
 
 import java.util.Scanner;
 
