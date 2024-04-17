@@ -31,7 +31,6 @@ class Pc_MayThread extends Thread {
 }
 
 class Pc_Runner implements Runnable {
-
     public void run() {
         for (int i = 0; i < 1000; i++) {
             try {
