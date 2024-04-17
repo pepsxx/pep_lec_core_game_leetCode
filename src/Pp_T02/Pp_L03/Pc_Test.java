@@ -1,4 +1,4 @@
-package Pp_T02.Pp_L01_ArrayList;
+package Pp_T02.Pp_L03;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Pc_Test {
     //https://www.youtube.com/@alishevN
-    //https://www.youtube.com/watch?v=QCjLMw988kQ
-    //Продвинутая Java: Динамический массив (ArrayList) - Введение.
+    //https://www.youtube.com/watch?v=0Cdsk2BeNA8
+    //Продвинутая Java: Введение в многопоточность в Java.
     public static void main(String[] args) {
 //        int[] pgi_x = int[3];
 //        for (int i = 0; i < 4; i++) { // Ошибка т.к. вышли за пределы.
