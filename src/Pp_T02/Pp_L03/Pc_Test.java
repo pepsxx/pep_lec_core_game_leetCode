@@ -12,7 +12,7 @@ public class Pc_Test {
 //        int[] pgi_x = int[3];
 //        for (int i = 0; i < 4; i++) { // Ошибка т.к. вышли за пределы.
 //            pgi_x[i] = 1;
-//        }
+////        }
         ArrayList<Integer> pmLIn_arrayList = new ArrayList<>();
         for (int i = 0; i < 100; i++) pmLIn_arrayList.add(i);
         System.out.println("pmLIn_arrayList = " + pmLIn_arrayList);
