@@ -1,13 +1,11 @@
 package Pp_T02.Pp_L04_LinkedList_2;
 
-import java.util.LinkedList;
-import java.util.List;
+import Pp_T02.Pp_L04_LinkedList_2.Pp_t_L.Pc_t_LinkedList;
 
 public class Pc_Test {
     //https://www.youtube.com/@alishevN
     //Продвинутая Java: Связный список LinkedList - Как устроен.
     public static void main(String[] args) {
-        List<Integer> poLIn_linkedList = new LinkedList<>();
         Pc_MyLinkedList po_myLinkedList = new Pc_MyLinkedList();
         po_myLinkedList.pf_add(1);
         po_myLinkedList.pf_add(2);
