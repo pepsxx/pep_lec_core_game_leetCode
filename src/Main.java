@@ -1,6 +1,7 @@
 public class Main {
-    public static void main(String[] args) {
-        pf_pepLogo();
+    public static void main(String[] args) throws InterruptedException {
+        pf_pepLogo1();
+        pf_pepLogo2();
         pf_pepNote();
         // Ошибки - Начало.
         // v2.4.0.4.1.6.
@@ -18,7 +19,7 @@ public class Main {
         // Ошибки - Конец.
     }
 
-    public static void pf_pepLogo() {
+    private static void pf_pepLogo1() {
         // Logo - Начало.
         // v2.4.0.4.1.3.
         System.out.println("""
@@ -40,7 +41,35 @@ public class Main {
         // Logo - Конец.
     }
 
-    public static void pf_pepNote() {
+    private static void pf_pepLogo2() throws InterruptedException {
+        // Logo - Начало.
+        // v2.4.0.4.1.8.
+        pf_printString("-----------------------------------------------------------------------------");
+        pf_printString("-                                              $$                           -");
+        pf_printString("- $$$$$$$$     $$$$$$   $$$$$$$$            $$$$$$$$  $$$$  $$$$ $$$$  $$$$ -");
+        pf_printString("- $$$$$$$$$   $$$$$$$$  $$$$$$$$$          $$$$$$$$$$ $$$$  $$$$ $$$$  $$$$ -");
+        pf_printString("- $$$$  $$$$ $$$$  $$$$ $$$$  $$$$         $$$$   $$$  $$$  $$$   $$$  $$$  -");
+        pf_printString("- $$$$  $$$$ $$$$  $$$$ $$$$  $$$$         $$$$         $$$$$$     $$$$$$   -");
+        pf_printString("- $$$$$$$$$  $$$$$$$$$$ $$$$$$$$$          $$$$$$$$$     $$$$       $$$$    -");
+        pf_printString("- $$$$$$$$   $$$$$$$$$$ $$$$$$$$            $$$$$$$$$    $$$$       $$$$    -");
+        pf_printString("- $$$$       $$$$       $$$$                     $$$$   $$$$$$     $$$$$$   -");
+        pf_printString("- $$$$       $$$$  $$$$ $$$$               $$$   $$$$  $$$  $$$   $$$  $$$  -");
+        pf_printString("- $$$$        $$$$$$$$  $$$$     $$$$$$$$  $$$$$$$$$$ $$$$  $$$$ $$$$  $$$$ -");
+        pf_printString("- $$$$          $$$$    $$$$     $$$$$$$$   $$$$$$$$  $$$$  $$$$ $$$$  $$$$ -");
+        pf_printString("-                                              $$                           -");
+        pf_printString("-----------------------------------------------------------------------------");
+        // Logo - Конец.
+    }
+
+    private static void pf_printString(String pmSt_s) throws InterruptedException {
+        for (int i = 0; i < pmSt_s.length(); i++) {
+            System.out.print(pmSt_s.charAt(i));
+            Thread.sleep(1);
+        }
+        System.out.println();
+    }
+
+    private static void pf_pepNote() {
         // Заметки - Начало.
         // v2.4.0.4.1.6.
         System.out.println("""
@@ -121,4 +150,5 @@ public class Main {
                 """);
         // Заметки - Конец.
     }
+
 }
