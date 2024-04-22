@@ -8,8 +8,8 @@ public class Pc_Test {
     //https://www.youtube.com/watch?v=lbvF7PwGyvY
     //Продвинутая Java: Динамический массив (ArrayList) - Как устроен?
     public static void main(String[] args) {
-        List<Integer> pmLIn_List = new ArrayList<>(100);
-        System.out.println("pmLIn_List = " + pmLIn_List);
-        System.out.println("pmLIn_List.size() = " + pmLIn_List.size());
+        List<Integer> poLi_List = new ArrayList<>(100);
+        System.out.println("poLi_List = " + poLi_List);
+        System.out.println("poLi_List.size() = " + poLi_List.size());
     }
 }

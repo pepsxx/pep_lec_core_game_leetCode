@@ -1,4 +1,4 @@
-package Pp_T02.Pp_L05_Map_HashMap;
+package Pp_T02.Pp_L05_Map_HashMap_1;
 
 import java.util.HashMap;
 import java.util.Map;

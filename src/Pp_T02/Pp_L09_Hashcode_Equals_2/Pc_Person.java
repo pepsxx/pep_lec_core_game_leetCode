@@ -28,4 +28,10 @@ public class Pc_Person {
         result = 31 * result + (pgSt_name != null ? pgSt_name.hashCode() : 0);
         return result;
     }
+    /*
+        Контракт hashCode()  equals()
+        1) hashCode().
+        2) if (hashCode(1) == hashCode(2)) then 3.
+        3) equals().
+    */
 }

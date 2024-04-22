@@ -21,7 +21,7 @@ public class Main {
 
     private static void pf_pepLogo1() {
         // Logo - Начало.
-        // v2.4.0.4.1.3.
+        // V2.4.0.4.1.9.
         System.out.println("""
                 -----------------------------------------------------------------------------
                 -                                              $$                           -
@@ -43,7 +43,7 @@ public class Main {
 
     private static void pf_pepLogo2() throws InterruptedException {
         // Logo - Начало.
-        // v2.4.0.4.1.8.
+        // v2.4.0.4.1.9.
         pf_printString("-----------------------------------------------------------------------------");
         pf_printString("-                                              $$                           -");
         pf_printString("- $$$$$$$$     $$$$$$   $$$$$$$$            $$$$$$$$  $$$$  $$$$ $$$$  $$$$ -");
@@ -71,7 +71,7 @@ public class Main {
 
     private static void pf_pepNote() {
         // Заметки - Начало.
-        // v2.4.0.4.1.9.
+        // V2.4.0.4.2.2.
         System.out.println("""
                 /////////////////////////////////////////////////////////////////////////////////////////
                 // Ctrl + D             - Создать копию выделенной(х) строки(ок) кода снизу.
@@ -114,9 +114,11 @@ public class Main {
                 // poObIS_Xx -> ObjectInputStream.
                 // poTh_Xxxx -> Thread.
                 //
-                // poLi_Xxxx - List. // Переделать.
-                // poSe_Xxxx - Set.
-                // poMa_Xxxx - Map.
+                // poLi_Xxxx - List. (ArrayList, LinkedList).
+                // poSt_Xxxx - List - Vector - Stack.
+                // poSe_Xxxx - Set. (HashSet, LinkedHashSet, TreeSet).
+                // poMa_Xxxx - Map. (HashMap, LinkedHashMap, TreeMap).
+                // poQu_Xxxx - Queue.
                 //
                 // set_pgi_age - Сетор для переменной pgi_ag. // Лучше создавать средой разработки.
                 // get_pgi_age - Гетор для переменной pgi_ag. // Лучше создавать средой разработки.
@@ -127,7 +129,7 @@ public class Main {
                 // pmy_Xxxxx - Переменная примитивная -> byte.
                 // pms_Xxxxx - Переменная примитивная -> short.
                 // pmi_Xxxxx - Переменная примитивная -> int.
-                // pml_Xxxxx - Переменная примитивная -> long.
+                // poLi_Xxxxx - Переменная примитивная -> long.
                 // pmf_Xxxxx - Переменная примитивная -> float.
                 // pmd_Xxxxx - Переменная примитивная -> double.
                 // pmb_Xxxxx - Переменная примитивная -> boolean.

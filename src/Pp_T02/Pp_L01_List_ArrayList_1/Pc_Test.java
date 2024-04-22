@@ -13,32 +13,32 @@ public class Pc_Test {
 //        for (int i = 0; i < 4; i++) { // Ошибка т.к. вышли за пределы.
 //            pgi_x[i] = 1;
 //        }
-        ArrayList<Integer> pmLIn_arrayList = new ArrayList<>();
-        for (int i = 0; i < 100; i++) pmLIn_arrayList.add(i);
-        System.out.println("pmLIn_arrayList = " + pmLIn_arrayList);
-        System.out.println("pmLIn_arrayList.get(0) = " + pmLIn_arrayList.get(0));
-        System.out.println("pmLIn_arrayList.get(99) = " + pmLIn_arrayList.get(99));
+        ArrayList<Integer> poLi_arrayList = new ArrayList<>();
+        for (int i = 0; i < 100; i++) poLi_arrayList.add(i);
+        System.out.println("poLi_arrayList = " + poLi_arrayList);
+        System.out.println("poLi_arrayList.get(0) = " + poLi_arrayList.get(0));
+        System.out.println("poLi_arrayList.get(99) = " + poLi_arrayList.get(99));
 
-        System.out.println("pmLIn_arrayList.size() = " + pmLIn_arrayList.size());
+        System.out.println("poLi_arrayList.size() = " + poLi_arrayList.size());
         System.out.println("-----------------------------------------------------------------------------------------");
 
-        for (int i = 0; i < pmLIn_arrayList.size(); i++)
-            System.out.println("pmLIn_arrayList.get(i) = " + pmLIn_arrayList.get(i));
+        for (int i = 0; i < poLi_arrayList.size(); i++)
+            System.out.println("poLi_arrayList.get(i) = " + poLi_arrayList.get(i));
 
-        for (Integer i : pmLIn_arrayList) System.out.println("i = " + i);
+        for (Integer i : poLi_arrayList) System.out.println("i = " + i);
         System.out.println("-----------------------------------------------------------------------------------------");
 
-        pmLIn_arrayList.clear();
-        for (int i = 0; i < 10; i++) pmLIn_arrayList.add(i);
-        System.out.println("pmLIn_arrayList = " + pmLIn_arrayList);
-        pmLIn_arrayList.remove(5);
-        System.out.println("pmLIn_arrayList = " + pmLIn_arrayList);
+        poLi_arrayList.clear();
+        for (int i = 0; i < 10; i++) poLi_arrayList.add(i);
+        System.out.println("poLi_arrayList = " + poLi_arrayList);
+        poLi_arrayList.remove(5);
+        System.out.println("poLi_arrayList = " + poLi_arrayList);
         System.out.println("-----------------------------------------------------------------------------------------");
 
-        List<Integer> pmLIn_List = new ArrayList<>(); // По конвенции писать List, а не ArrayList.
-        for (int i = 0; i < 10; i++) pmLIn_List.add(i);
-        System.out.println("pmLIn_List = " + pmLIn_List);
-        pmLIn_List = new LinkedList<>(pmLIn_List); // Преобразование ArrayList в LinkedList, можно сделать т.к. List<Integer>, а не только ArrayList<Integer>.
-        System.out.println("pmLIn_List = " + pmLIn_List);
+        List<Integer> poLi_List = new ArrayList<>(); // По конвенции писать List, а не ArrayList.
+        for (int i = 0; i < 10; i++) poLi_List.add(i);
+        System.out.println("poLi_List = " + poLi_List);
+        poLi_List = new LinkedList<>(poLi_List); // Преобразование ArrayList в LinkedList, можно сделать т.к. List<Integer>, а не только ArrayList<Integer>.
+        System.out.println("poLi_List = " + poLi_List);
     }
 }
