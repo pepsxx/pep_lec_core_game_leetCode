@@ -71,7 +71,7 @@ public class Main {
 
     private static void pf_pepNote() {
         // Заметки - Начало.
-        // V2.4.0.4.2.2.
+        // V2.4.0.4.2.3.
         System.out.println("""
                 /////////////////////////////////////////////////////////////////////////////////////////
                 // Ctrl + D             - Создать копию выделенной(х) строки(ок) кода снизу.
@@ -113,6 +113,7 @@ public class Main {
                 // poObOS_Xx -> ObjectOutputStream.
                 // poObIS_Xx -> ObjectInputStream.
                 // poTh_Xxxx -> Thread.
+                // poRa_Xxxx -> Random.
                 //
                 // poLi_Xxxx - List. (ArrayList, LinkedList).
                 // poSt_Xxxx - List - Vector - Stack.
