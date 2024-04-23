@@ -32,22 +32,22 @@ public class Pc_Main {
     private static Integer[][] pgMMIn_map_ghost = pf_map_ghost(pgMMIn_map);
 
     public static void main(String[] args) {
-//        for (int i = 0; i <= 2048; i++) {
-//            System.out.printf("%6d ", i);
-//            System.out.print((char) i);
-//            if (i != 0) {
-//                if (i % 10 == 0) System.out.println();
-//            }
-//        }
-//        System.out.println();
-//
-//        System.out.println();
-//        System.out.println((char) 164+" " +164);
-//        System.out.println((char) 161+" " +161);
-//        System.out.println((char) 160+" " +160);
-//        System.out.println((char) 165+" " +165);
-//        System.out.println((char) 174+" " +174);
-//        System.out.println((char) 183+" " +183);
+        for (int i = 0; i <= 2048; i++) {
+            System.out.printf("%6d ", i);
+            System.out.print((char) i);
+            if (i != 0) {
+                if (i % 10 == 0) System.out.println();
+            }
+        }
+        System.out.println();
+
+        System.out.println();
+        System.out.println((char) 164+" " +164);
+        System.out.println((char) 161+" " +161);
+        System.out.println((char) 160+" " +160);
+        System.out.println((char) 165+" " +165);
+        System.out.println((char) 174+" " +174);
+        System.out.println((char) 183+" " +183);
 
         while (pf_check_finish(pgMMIn_map, pgMMIn_map_ghost)) {
             pf_inputMap(pgMMIn_map);
