@@ -40,14 +40,22 @@ class Pc_Task {
 
     public void pf_firstThread() {
         po_lock.lock();
-        pf_increment();
-        po_lock.unlock();
+        try {
+            pf_increment();
+        }
+       finally { // unlock - всегда вызывать в finally
+            po_lock.unlock();
+        }
     }
 
     public void pf_secondThread() {
         po_lock.lock();
-        pf_increment();
-        po_lock.unlock();
+       try {
+           pf_increment();
+       }
+       finally { // unlock - всегда вызывать в finally
+           po_lock.unlock();
+       }
     }
     public void pf_showCounter (){
         System.out.println("pgi_counter = " + pgi_counter);
