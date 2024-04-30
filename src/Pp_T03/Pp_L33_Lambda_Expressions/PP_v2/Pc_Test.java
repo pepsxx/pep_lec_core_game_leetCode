@@ -1,4 +1,4 @@
-package Pp_T03.Pp_L33_Lambda_Expressions_1.PP_v2;
+package Pp_T03.Pp_L33_Lambda_Expressions.PP_v2;
 
 import java.util.ArrayList;
 import java.util.Comparator;

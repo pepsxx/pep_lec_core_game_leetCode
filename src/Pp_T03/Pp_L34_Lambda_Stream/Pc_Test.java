@@ -1,4 +1,4 @@
-package Pp_T03.Pp_L34_Lambda_In_Methods;
+package Pp_T03.Pp_L34_Lambda_Stream;
 
 import java.util.*;
 import java.util.stream.Collectors;

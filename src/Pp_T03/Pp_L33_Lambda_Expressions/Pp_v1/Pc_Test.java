@@ -1,4 +1,4 @@
-package Pp_T03.Pp_L33_Lambda_Expressions_1.Pp_v1;
+package Pp_T03.Pp_L33_Lambda_Expressions.Pp_v1;
 
 class Pc_ExecutableImplementation implements Pi_Executable {   // v1
     @Override                                                  // v1
