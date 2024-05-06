@@ -13,7 +13,7 @@ public class Pc_Test {
         String s2 = "22";
         String[] sm2 = {"222", "222"};
         int x3 = 66_666_666;
-        int[] nums3 = new int[100_000_000];
+        int[] nums3 = new int[200_000_000];
         for (int i = 0; i < nums3.length; i++) {
             nums3[i] = i;
         }

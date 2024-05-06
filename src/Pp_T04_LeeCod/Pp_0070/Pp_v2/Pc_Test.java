@@ -18,8 +18,8 @@ public class Pc_Test {
         String[] sm3 = {"333", "333"};
 //--------------------------------------------------------------------------------------------------------------------//
         Solution solution = new Solution();
-//        solution.climbStairs(x1);
-        System.out.println("solution.climbStairs(1) = " + solution.climbStairs(1));
+        System.out.println("solution.climbStairs(x1) = " + solution.climbStairs(x1));
+//        System.out.println("solution.climbStairs(1) = " + solution.climbStairs(1));
 //        System.out.println("solution.climbStairs(2) = " + solution.climbStairs(2));
 //        System.out.println("solution.climbStairs(3) = " + solution.climbStairs(3));
 //        System.out.println("solution.climbStairs(4) = " + solution.climbStairs(4));
