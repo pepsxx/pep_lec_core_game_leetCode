@@ -11,7 +11,8 @@ public class Pc_Test {
         ExecutorService poEx_executorService = Executors.newFixedThreadPool(5);
 
         for (int i = 0; i < 50; i++)
-            poEx_executorService.submit(new Pc_Work(i)); // Подготовка потоков.
+            poEx_executorService.submit(new Pc_Work(i)); // Подготовка задачи.
+//            poEx_executorService.submit(()-> System.out.println("----")); // Подготовка задачи.
         poEx_executorService.shutdown(); // ? Запуск потоков.
         System.out.println("All tasks submitted");
 
