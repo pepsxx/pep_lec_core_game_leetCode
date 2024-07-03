@@ -1,4 +1,4 @@
-package Pp_T04_LeeCod.Pp_0017.Pp_v2;
+package Pp_T04_LeeCod.Pp_0017.Pp_v3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,13 +46,10 @@ class Solution {
             number /= 10;
         }
 
-        method(keysPress, "", keysPress.get(0), 0, list);
-
-        return list;
+        return method(keysPress, "", keysPress.get(0), 0, list);
     }
 
-    static public void method(List<String[]> keysPress, String s, String[] key, int iterator, List<String> list) {
-
+    static public List<String> method(List<String[]> keysPress, String s, String[] key, int iterator, List<String> list) {
         int i = 0;
         while (i < (key.length)) {
             if (iterator < keysPress.size() - 1) {
@@ -62,6 +59,7 @@ class Solution {
             }
             i++;
         }
+        return list;
     }
 }
 //--------------------------------------------------------------------------------------------------------------------//

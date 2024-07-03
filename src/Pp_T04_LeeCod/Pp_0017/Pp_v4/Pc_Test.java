@@ -1,4 +1,4 @@
-package Pp_T04_LeeCod.Pp_0017.Pp_v2;
+package Pp_T04_LeeCod.Pp_0017.Pp_v4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,45 +20,47 @@ public class Pc_Test {
         String s3 = "2";
         String[] sm3 = {"333", "333"};
 //--------------------------------------------------------------------------------------------------------------------//
-        Solution solution = new Solution();
-        System.out.println("solution.letterCombinations(s1) = " + solution.letterCombinations(s1));
-        System.out.println("solution.letterCombinations(s2) = " + solution.letterCombinations(s2));
-        System.out.println("solution.letterCombinations(s3) = " + solution.letterCombinations(s3));
+        Solution solution1 = new Solution();
+        System.out.println("solution.letterCombinations(s1) = " + solution1.letterCombinations(s1));
+        Solution solution2 = new Solution();
+        System.out.println("solution.letterCombinations(s2) = " + solution2.letterCombinations(s2));
+        Solution solution3 = new Solution();
+        System.out.println("solution.letterCombinations(s3) = " + solution3.letterCombinations(s3));
     }
 }
 
 //--------------------------------------------------------------------------------------------------------------------//
 class Solution {
-    public List<String> letterCombinations(String digits) {
-        List<String> list = new ArrayList<>();
-        if (digits.isEmpty()) return list;
-        String[][] keyboard = {{},
-                {}, {"a", "b", "c"}, {"d", "e", "f"},
-                {"g", "h", "i"}, {"j", "k", "l"}, {"m", "n", "o"},
-                {"p", "q", "r", "s"}, {"t", "u", "v"}, {"w", "x", "y", "z"}};
-        List<String[]> keysPress = new ArrayList<>();
+    static private final String[][] keyboard = {{},                       //    0
+            {}, {"a", "b", "c"}, {"d", "e", "f"},                         // 1, 2, 3
+            {"g", "h", "i"}, {"j", "k", "l"}, {"m", "n", "o"},            // 4, 5, 6
+            {"p", "q", "r", "s"}, {"t", "u", "v"}, {"w", "x", "y", "z"}}; // 7, 8, 9
+    private final List<String> resultList = new ArrayList<>();
+    private final List<String[]> keysPress = new ArrayList<>();
 
-//        digits = new StringBuilder(digits).reverse().toString();
+
+    public List<String> letterCombinations(String digits) {
+
+        if (digits.isEmpty()) return resultList;
+
         int number = Integer.parseInt(new StringBuilder(digits).reverse().toString());
 
         while (number > 0) {
-            keysPress.add(keyboard[number % 10]);
+            this.keysPress.add(keyboard[number % 10]);
             number /= 10;
         }
 
-        method(keysPress, "", keysPress.get(0), 0, list);
-
-        return list;
+        this.method("", this.keysPress.get(0), 0);
+        return resultList;
     }
 
-    static public void method(List<String[]> keysPress, String s, String[] key, int iterator, List<String> list) {
-
+    public void method(String s, String[] key, int iterator) {
         int i = 0;
         while (i < (key.length)) {
-            if (iterator < keysPress.size() - 1) {
-                method(keysPress, (s + key[i]), keysPress.get(iterator + 1), iterator + 1, list);
+            if (iterator < this.keysPress.size() - 1) {
+                this.method((s + key[i]), this.keysPress.get(iterator + 1), iterator + 1);
             } else {
-                list.add(s + key[i]);
+                resultList.add(s + key[i]);
             }
             i++;
         }
