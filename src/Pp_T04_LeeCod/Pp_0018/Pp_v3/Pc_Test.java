@@ -25,7 +25,7 @@ public class Pc_Test {
         int x5 = -294967296;
         int[] nums5 = {1000000000, 1000000000, 1000000000, 1000000000};
         int x6 = 0;
-        int[] nums6 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] nums6 = {0, 1, 2, -1, -2};
 //--------------------------------------------------------------------------------------------------------------------//
         Solution solution = new Solution();
         System.out.println("solution.fourSum(nums1, x1) = " + solution.fourSum(nums1, x1));
