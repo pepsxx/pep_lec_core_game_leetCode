@@ -70,8 +70,9 @@ public class Main {
 
     private static void pf_pepNote() {
         // Заметки - Начало.
-        // V2.4.0.6.0.3.
+        // V2.4.0.7.1.5.
 
+        // Заметки - Конец.
         System.out.println("""
                 /////////////////////////////////////////////////////////////////////////////////////////
                 // Ctrl + D             - Создать копию выделенной(х) строки(ок) кода снизу.
@@ -162,8 +163,36 @@ public class Main {
                 // pmМSt_Xxxx - Масив - Одномерный  -> String.
                 // pmМMSt_Xxx - Масив - Двумерный   -> String.
                 /////////////////////////////////////////////////////////////////////////////////////////
+                //
+                // entry    - Запись
+                // entity   - Сущность
+                // isEmpty  - Пусто
+                // instsnce - Экземпляр
+                // invoke   - Вызывать
+                // forEach  - Для Каждого
+                // field    - Поле
+                // peek     - Заглянуть
+                /////////////////////////////////////////////////////////////////////////////////////////
+                //
+                //         Стандартные   - Потокобезопасные
+                // List
+                //       - ArrayList     - CopyOnWriteArrayList
+                //       - LinkedList    -
+                //
+                // Queue - Queue         - BlockingQueue - ConcurrentLinkedQueue - ArrayBlockingQueue
+                // Deque - Deque         - BlockingDeque - ConcurrentLinkedDeque
+                //
+                // Set                   
+                // 	     - HashSet       - CopyOnWriteArraySet
+                // 	     - LinkedHashSet - -
+                //       - TreeSet       - ConcurrentSkipListSet
+                //	 
+                // Map                  
+                //       - HashMap       - ConcurrentHashMap 
+                //       - LinkedHashMap - -
+                //       - TreeMap       - ConcurrentSkipListMap
+                /////////////////////////////////////////////////////////////////////////////////////////
                 """);
-        // Заметки - Конец.
     }
 
 }
